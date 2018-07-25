@@ -1,6 +1,6 @@
 {
   "name": "react-dnd-drop",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "lib/index.js",
   "repository": "git@github.com:juji/react-dnd-drop.git",
   "author": "jujiyangasli@gmail.com",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.54",
     "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
     "@babel/preset-react": "^7.0.0-beta.54",
     "@babel/preset-stage-2": "^7.0.0-beta.54"
   },
