@@ -1,0 +1,11 @@
+{
+  "name": "react-dnd-drop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:juji/react-dnd-drop.git",
+  "author": "jujiyangasli@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "box-intersect": "^1.0.1"
+  }
+}
