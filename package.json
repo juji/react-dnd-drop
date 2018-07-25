@@ -1,11 +1,20 @@
 {
   "name": "react-dnd-drop",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:juji/react-dnd-drop.git",
   "author": "jujiyangasli@gmail.com",
   "license": "MIT",
   "dependencies": {
     "box-intersect": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-react": "^7.0.0-beta.54",
+    "@babel/preset-stage-2": "^7.0.0-beta.54"
+  },
+  "scripts": {
+    "build": "babel src -s -d lib --copy-files"
   }
 }
