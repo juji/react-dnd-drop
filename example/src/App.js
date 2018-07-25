@@ -14,13 +14,23 @@ export default class App extends Component {
     const { page } = this.state;
 
     return <div id="app">
-      <h1>React-DnD-Drop Example</h1>
+      <h1>React-DnD-Drop</h1>
       <p>
-        <button onClick={() => this.setState({ page: 'single' })}>Single</button>
-        <button onClick={() => this.setState({ page: 'multiple' })}>Multiple</button>
+        Is a drag-n-drop component for React. 
+        Enables you to place an item on a drop-area.
+        It works with the DOM.
+      </p>
+      <p>
+        <small>This is not a sort. It's a fancy multiple-selection thingy.</small>
+      </p>
+      <br /><br />
+      <p>
+        <button className={this.state.page === 'single' ? 'active' : ''} onClick={() => this.setState({ page: 'single' })}>Single</button>
+        <button className={this.state.page === 'multiple' ? 'active' : ''} onClick={() => this.setState({ page: 'multiple' })}>Multiple</button>
       </p>
       {( page === 'single' && <Single /> ) || null}
       {( page === 'multiple' && <Multiple /> ) || null}
+      <p><a href="http://jujiyangasli.com">jujiyangasli.com</a></p>
     </div>
 
   }
