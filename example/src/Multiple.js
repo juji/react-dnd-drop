@@ -33,13 +33,13 @@ export default class App extends Component {
             
             <div className="left">
               <div className="dropzone" ref={r => this.dropArea1 = r}>{items1.map(v =>
-                <div className="item">item {v}</div>
+                <div key={v} className="item">item {v}</div>
               )}</div>
             </div>
 
             <div className="right">
               <div className="dropzone" ref={r => this.dropArea2 = r}>{items2.map(v =>
-                <div className="item">item {v}</div>
+                <div key={v} className="item">item {v}</div>
               )}</div>
             </div>
 

@@ -22,9 +22,9 @@ export default class App extends Component {
       </p>
       <p>
         <small>This is not a sort. It's a fancy multiple-selection thingy.</small><br />
-        <a href="https://github.com/juji/react-dnd-drop">Docs</a>
       </p>
       <br /><br />
+      <a href="https://github.com/juji/react-dnd-drop">Docs</a>
       <p>
         <button className={this.state.page === 'single' ? 'active' : ''} onClick={() => this.setState({ page: 'single' })}>Single</button>
         <button className={this.state.page === 'multiple' ? 'active' : ''} onClick={() => this.setState({ page: 'multiple' })}>Multiple</button>

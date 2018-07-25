@@ -28,7 +28,7 @@ export default class App extends Component {
       <div className="container">
         <div className="left">
           <div className="dropzone" ref={r => this.dropArea = r}>{items.map(v =>
-            <div className="item">item {v}</div>
+            <div key={v} className="item">item {v}</div>
           )}</div>
         </div>
         <div className="right item-container">{[...Array(5).keys()].map(v => (
