@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DnD from './DnD';
+import DnD from 'react-dnd-drop';
 
 export default class App extends Component {
 
