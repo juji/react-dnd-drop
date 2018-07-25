@@ -21,7 +21,8 @@ export default class App extends Component {
         It works with the DOM.
       </p>
       <p>
-        <small>This is not a sort. It's a fancy multiple-selection thingy.</small>
+        <small>This is not a sort. It's a fancy multiple-selection thingy.</small><br />
+        <a href="https://github.com/juji/react-dnd-drop">Docs</a>
       </p>
       <br /><br />
       <p>
