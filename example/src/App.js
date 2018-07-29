@@ -17,7 +17,7 @@ export default class App extends Component {
       <h1>React-DnD-Drop</h1>
       <p>
         Is a drag-n-drop component for React. 
-        Enables you to place an item on a drop-area.
+        It enables you to place an item on a drop-area.
         It works with the DOM.
       </p>
       <p>
