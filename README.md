@@ -2,7 +2,11 @@
 
 It's a drag and drop react component with designated drop area(s).
 
-This is not a sorting component, it's a fancy multiple-selection component.
+It enables you to place an item on a drop-area. It works with the DOM.
+
+This is not a sorting component, it's a fancy multiple-selection thingy.
+
+[Example](http://juji.github.io/react-dnd-drop/)
 
 ## Install
 ```
