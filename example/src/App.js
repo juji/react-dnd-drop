@@ -18,7 +18,7 @@ export default class App extends Component {
       <p>
         Is a drag-n-drop component for React. 
         It enables you to place an item on a drop-area.
-        It works with the DOM.
+        It works with the DOM (touch-enabled).
       </p>
       <p>
         <small>This is not a sort. It's a fancy multiple-selection thingy.</small><br />

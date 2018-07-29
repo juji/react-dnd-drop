@@ -2,7 +2,7 @@
 
 It's a drag and drop react component with designated drop area(s).
 
-It enables you to place an item on a drop-area. It works with the DOM, and it's touch-enabled.
+It enables you to place an item on a drop-area. It works with the DOM (touch-enabled).
 
 This is not a sort. It's a fancy multiple-selection thingy.
 
