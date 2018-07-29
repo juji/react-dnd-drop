@@ -5,11 +5,12 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.1",
-    "react-dnd-drop": "^1.1.0",
+    "react-dnd-drop": "^1.1.2",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   }
 }
