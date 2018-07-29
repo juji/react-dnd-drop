@@ -27,8 +27,8 @@ export default class App extends Component {
       <p>Left box is the drop zone, right boxes are the draggable items</p>
       <div className="container">
         <div className="left">
-          <div className="dropzone" ref={r => this.dropArea = r}>{items.map(v =>
-            <div key={v} className="item">item {v}</div>
+          <div className="dropzone" ref={r => this.dropArea = r}>{items.map((v,i) =>
+            <div key={i} className="item">item {v}</div>
           )}</div>
         </div>
         <div className="right item-container">{[...Array(5).keys()].map(v => (

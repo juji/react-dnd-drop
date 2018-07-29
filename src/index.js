@@ -23,20 +23,22 @@ export default class DnD extends Component {
   }
 
   onMouseDown = (e) => {
-    e.preventDefault()
+    console.log('onMouseDown');
+    try{ e.preventDefault() }catch(e){}
     const { top, left, width, height } = ReactDOM.findDOMNode(this.elm).getBoundingClientRect();
     this.setState({ top, left, width, height, 
       dragging: true,
-      deltaLeft: e.clientX - left,
-      deltaTop: e.clientY - top
+      deltaLeft: (e.touches && typeof e.touches[0].clientX !== undefined ? e.touches[0].clientX : e.clientX) - left,
+      deltaTop: (e.touches && typeof e.touches[0].clientY !== undefined ? e.touches[0].clientY : e.clientX) - top
     })
   }
 
   onMouseMove = (e) => {
+    console.log('onMouseMove');
     if(!this.state.dragging) return;
     this.setState({
-      top: e.clientY - this.state.deltaTop,
-      left: e.clientX - this.state.deltaLeft
+      left: (e.touches && typeof e.touches[0].clientX !== undefined ? e.touches[0].clientX : e.clientX) - this.state.deltaLeft,
+      top: (e.touches && typeof e.touches[0].clientY !== undefined ? e.touches[0].clientY : e.clientX) - this.state.deltaTop
     })
   }
 
@@ -95,13 +97,16 @@ export default class DnD extends Component {
       width, height, top, left
     }
 
-    return <div ref={r => this.elm = r} onMouseDown={this.onMouseDown} onTouchStart={this.onMouseDown}>
+    return <div ref={r => this.elm = r} 
+      onMouseDown={this.onMouseDown} 
+      onTouchStart={this.onMouseDown}
+      onTouchMove={ dragging ? this.onMouseMove : null }
+      onTouchEnd={ dragging ? this.onMouseUp : null }
+    >
       {this.props.children}
       <div 
         onMouseMove={ dragging ? this.onMouseMove : null }
-        onTouchMove={ dragging ? this.onMouseMove : null }
         onMouseUp={ dragging ? this.onMouseUp : null }
-        onTouchEnd={ dragging ? this.onMouseUp : null }
         style={overlay}
       >
         <div ref={r => this.copy = r} style={copy}>
