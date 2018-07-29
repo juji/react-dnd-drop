@@ -2,7 +2,7 @@
 
 It's a drag and drop react component with designated drop area(s).
 
-It enables you to place an item on a drop-area. It works with the DOM.
+It enables you to place an item on a drop-area. It works with the DOM, and it's touch-enabled.
 
 This is not a sort. It's a fancy multiple-selection thingy.
 
@@ -71,7 +71,7 @@ Every item gets a copy, which style can be overriden with `copyStyle`, it will b
 }
 ```
 
-on `mouseDown`, mouse movement (or touch) gets tracked by the overlay, which style can be ovverriden with `overlayStyle`:
+on `mouseDown`, mouse movement (or touch movement) gets tracked by the overlay, which style can be ovverriden with `overlayStyle`:
 ```js
 {
   backgroundColor:'transparent',
@@ -87,7 +87,7 @@ on `mouseDown`, mouse movement (or touch) gets tracked by the overlay, which sty
 }
 ```
 
-on `mouseUp`, intersections will be calculated between the copy and the dropAreas. If there is an intersection,
+on `mouseUp` (or `touchEnd`), intersections will be calculated between the copy and the dropAreas. If there is an intersection,
 `onDrop` will be executed:
 ```
 onDrop( indexes_of_intersected_dropareas )
