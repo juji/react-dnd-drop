@@ -55,7 +55,7 @@ handleDrop = ( dropAreas, item ) => {
 
 ## How it works
 Every item gets a copy, which style can be overriden with `copyStyle`, it will be overriden like this:
-```
+```js
 {
   opacity:0.8,
   position:'fixed',
@@ -68,7 +68,7 @@ Every item gets a copy, which style can be overriden with `copyStyle`, it will b
 ```
 
 on `mouseDown`, mouse movement (or touch) gets tracked by the overlay, which style can be ovverriden with `overlayStyle`:
-```
+```js
 {
   backgroundColor:'transparent',
   position:'fixed',
