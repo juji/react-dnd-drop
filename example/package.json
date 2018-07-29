@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "react": "^16.4.1",
-    "react-dnd-drop": "^1.1.2",
+    "react-dnd-drop": "^1.1.8",
     "react-dom": "^16.4.1",
     "react-scripts": "^1.1.4"
   },
