@@ -87,7 +87,7 @@ on `mouseDown`, mouse movement (or touch) gets tracked by the overlay, which sty
 }
 ```
 
-on `mouseUp`, intersections will calculated between the copy and the dropAreas. If there is an intersection,
+on `mouseUp`, intersections will be calculated between the copy and the dropAreas. If there is an intersection,
 `onDrop` will be executed:
 ```
 onDrop( indexes_of_intersected_dropareas )
